@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="div1">
+        <h1>Survey Form</h1>
+
+    </div>
+    <form>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="age">Date Of Birth</label>
+        <input type="date" id="age" name="age" required>
+        
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="">--Select--</option>
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+			<option value="Other">Other</option>
+        </select>
+
+        <label for="email">Email</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="phone-number">Phone Number</label>
+		<input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{10}" required>
+
+		<label for="iq-level">IQ Level</label>
+		<input type="text" id="iq-level" name="iq-level" required>
+       
+        <label>Interests:</label><br>
+        <input type="checkbox" id="checkbox" name="checkbox" style="display: inline-block; vertical-align: middle;">
+        <span>Sports</span>
+		<input type="checkbox" id="checkbox" name="checkbox" style="display: inline-block; vertical-align: middle;">
+        <span >Music</span>
+        <input type="checkbox" id="checkbox" name="checkbox" style="display: inline-block; vertical-align: middle;">
+		<span>Travel</span><br>
+
+        <div class="col-lg-6"><br>
+            <label for="AreYouKnowAbout">Are You Know About:</label><br> 
+          <input type="radio" id="html" name="fav_language" value="HTML" style="display: inline-block; vertical-align: middle;">
+          <span for="html">HTML</span><br>
+          
+          <input type="radio" id="css" name="fav_language" value="CSS" style="display: inline-block; vertical-align: middle;">
+          <span for="css">CSS</span><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript" style="display: inline-block; vertical-align: middle;">
+          <span for="javascript">JavaScript</span></div><br>
+
+		<label for="feedback">Feedback:</label>
+		<textarea rows="5" cols="70" id="feedback" name="feedback" style="max-width: 100%;"></textarea><br><br>
+
+		<input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
