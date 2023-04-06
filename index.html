@@ -10,8 +10,10 @@
 <body>
     <div class="div1">
         <h1>Survey Form</h1>
+        <p>Please fill the mandatory fields in the form</p>
 
     </div>
+    <!-- form start -->
     <form>
         <label for="first-name">First Name</label>
         <input type="text" id="first-name" name="first-name" required>
@@ -38,6 +40,10 @@
 
 		<label for="iq-level">IQ Level</label>
 		<input type="text" id="iq-level" name="iq-level" required>
+
+        <!-- form End -->
+
+        <!-- check Button Start -->
        
         <label>Interests:</label><br>
         <input type="checkbox" id="checkbox" name="checkbox" style="display: inline-block; vertical-align: middle;">
@@ -47,6 +53,7 @@
         <input type="checkbox" id="checkbox" name="checkbox" style="display: inline-block; vertical-align: middle;">
 		<span>Travel</span><br>
 
+<!-- radio button start -->
         <div class="col-lg-6"><br>
             <label for="AreYouKnowAbout">Are You Know About:</label><br> 
           <input type="radio" id="html" name="fav_language" value="HTML" style="display: inline-block; vertical-align: middle;">
@@ -57,9 +64,12 @@
           <input type="radio" id="javascript" name="fav_language" value="JavaScript" style="display: inline-block; vertical-align: middle;">
           <span for="javascript">JavaScript</span></div><br>
 
-		<label for="feedback">Feedback:</label>
-		<textarea rows="5" cols="70" id="feedback" name="feedback" style="max-width: 100%;"></textarea><br><br>
 
+          <!-- feedback -->
+		<label for="feedback">Feedback:</label>
+		<textarea rows="5" cols="70" id="feedback" name="feedback" style="max-width: 100%;" placeholder="Please share your thoughts and suggestions"></textarea><br><br>
+ <!-- <p>Please share your thoughts and suggestions</p> -->
+        <!-- submit button Start -->
 		<input type="submit" value="Submit">
     </form>
     

@@ -8,6 +8,10 @@ h1 {
     margin: auto;
     padding: 20px; */
 }
+p{
+    text-align: center;
+    font-size: 17px;
+}
 form {
     max-width: 500px;
     margin: auto;
